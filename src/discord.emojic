@@ -35,9 +35,23 @@
 
     🌮 shortcut for sending an IDENTIFY payload 🌮
     🐖 👤 🍇
-        🍦 msg 🍪 🔤{"op":2,"d":{"token":"🔤 token 🔤","compress":false,"large_threshold":250,"properties":{"$os":"linux","$browser":"Emoji","$device": "Emoji"}}}🔤 🍪
-        ✏🐕 msg 
-        😀 🔤Wrote message🔤
+        🍦 d            🔷🍯🐚🚧🐸
+        🍦 obj          🔷🍯🐚🚧🐸
+        🍦 properties   🔷🍯🐚🚧🐸
+                
+        🐷 properties 🔤$os🔤       🔤linux🔤
+        🐷 properties 🔤$brwoser🔤  🔤Cancer🔤
+        🐷 properties 🔤$device🔤   🔤Cancer🔤
+
+        🐷 d 🔤token🔤              token
+        🐷 d 🔤compress🔤           👎
+        🐷 d 🔤large_threshold🔤    250
+        🐷 d 🔤properties🔤         properties
+
+        🐷 obj 🔤op🔤 2
+        🐷 obj 🔤d🔤  d          
+
+        ✏🐕 🚧obj
     🍉
 
     🌮 The bread and butter, or whatever you like to call it. Give this guy a callable and you will receive all the events you might ever want. 🌮
