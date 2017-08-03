@@ -1,0 +1,8 @@
+targets: # Targets to be expandedd by zir
+  - src/main.emojic.z
+
+ids: # identifiers for each script
+  ruby: ruby @file
+
+finally: # command to be executed at last
+  echo yay

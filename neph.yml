@@ -1,0 +1,17 @@
+zir:
+  command:
+    zir run
+
+clean:
+  command: |
+    rm src/*.emojib
+    rm src/main.emojib
+
+build:
+  command:
+    emojicodec src/main.emojib
+
+main:
+  depends_on:
+    - clean
+    - zir
