@@ -4,14 +4,15 @@ zir:
 
 clean:
   command: |
-    rm src/*.emojib
-    rm src/main.emojib
+    rm -f src/*.emojib
+    rm -f src/main.emojib
 
 build:
   command:
-    emojicodec src/main.emojib
+    emojicodec src/main.emojic
 
 main:
   depends_on:
     - clean
     - zir
+    - build
