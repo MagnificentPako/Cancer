@@ -1,18 +1,24 @@
-zir:
-  command:
-    zir run
-
 clean:
   command: |
     rm -f src/*.emojib
-    rm -f src/main.emojib
+    rm -f src/main.emojic
+
+zir:
+  command:
+    zir run
+  depends_on:
+    - clean
 
 build:
   command:
     emojicodec src/main.emojic
+  depends_on:
+    - zir
+
+docs:
+  command:
+    emojicodec -r src/main.emojic > docs/raw.json
 
 main:
   depends_on:
-    - clean
-    - zir
     - build

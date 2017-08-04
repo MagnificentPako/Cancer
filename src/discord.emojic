@@ -1,18 +1,35 @@
+📜 🔤json.emojic🔤
+📜 🔤http.emojic🔤
+
 🌮 
     A class which let's you interact with Discord thingies.
 🌮
 🐇 🎅 🍇
     🍰 socket 📞
     🍰 token 🔡
+    🍰 headers 🍯🐚🔡
+    🍰 http_client 🍑
 
-    🌮 The constructor for a discord instance 🌮
+    🌮
+        The constructor for a discord instanc
+    🌮
     🐈 🔌 🍼token🔡 🍇
         🍮 socket 🚇 🔷📞🆕 🔤127.0.0.1🔤 6969
+        🍮 headers 🔷🍯🐚🔡🐸
+
+        🐷 headers 🔤User-Agent🔤 🔤DiscordBot (https://github.com/MagnificentPako/Cancer, 1)🔤
+        🐷 headers 🔤Authorization🔤 🍪 🔤Bot 🔤 token 🍪
+        🐷 headers 🔤Content-Type🔤 🔤application/json🔤
+
+        🍮 http_client 🔷🍑🆕 🔤localhost🔤 4242
+
         💬 socket 📇 🔤;🔤
         👂🐕
     🍉
 
-    🌮 Receive one "frame" 🌮
+    🌮 
+        Receive one "frame"
+    🌮
     🐖 👂 ➡️ 🔡 🍇
         🍮 finished 👎
         🍦 dat 🔷🍨🐚🔡🐸
@@ -28,19 +45,23 @@
         🍎 🔷🔡🍨 dat 🔤🔤
     🍉
 
-    🌮 send one raw message 🌮
+    🌮
+        send one raw message
+    🌮
     🐖 ✏ message 🔡 🍇
         💬 socket 📇 message
     🍉
 
-    🌮 shortcut for sending an IDENTIFY payload 🌮
+    🌮
+        shortcut for sending an IDENTIFY payload
+    🌮
     🐖 👤 🍇
         🍦 d            🔷🍯🐚🚧🐸
         🍦 obj          🔷🍯🐚🚧🐸
         🍦 properties   🔷🍯🐚🚧🐸
                 
         🐷 properties 🔤$os🔤       🔤linux🔤
-        🐷 properties 🔤$brwoser🔤  🔤Cancer🔤
+        🐷 properties 🔤$browser🔤  🔤Cancer🔤
         🐷 properties 🔤$device🔤   🔤Cancer🔤
 
         🐷 d 🔤token🔤              token
@@ -54,8 +75,10 @@
         ✏🐕 🚧obj
     🍉
 
-    🌮 The bread and butter, or whatever you like to call it. Give this guy a callable and you will receive all the events you might ever want. 🌮
-    🐖☎ callback 🍇🍯🐚⚪🍉 🍇
+    🌮
+        The bread and butter, or whatever you like to call it. Give this guy a callable and you will receive all the events you might ever want.
+    🌮
+    🐖☎ callback 🍇🔡🍉 🍇
         👤🐕
         🍮 start_time 🍩🕰💻
         🍮 current_s -1
@@ -63,13 +86,18 @@
 
         🔁👍 🍇
             🍦 raw 👂🐕
-            🍦 json 📰raw
-            🍊🍦 parsed 🔲 json 🚧 🍇
-                😀 🚧parsed
-                👴🍭 callback parsed
-            🍉🍓🍇
-                😀 🍪🔤Failed to parse: 🔤 raw🍪
-            🍉
+            😀 🔤debug🔤
+            🍭 callback raw
         🍉
+    🍉
+
+    🌮
+        Send a message to a channel
+    🌮
+    🐖💬 channel🚂 message🔡 🍇
+        🍦 body 🔷🍯🐚🚧🐸
+        🐷 body 🔤content🔤 message
+
+        💦 http_client 🍪 🔤/api/v6/channels/🔤 🔡channel 10 🔤/messages🔤 🍪 headers 🚧body
     🍉
 🍉

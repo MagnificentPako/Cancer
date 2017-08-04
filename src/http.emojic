@@ -1,0 +1,72 @@
+🌮 Do some HTTP request stuff 🌮
+🐇 🍑 🍇
+    
+    🍰 host 🔡
+    🍰 port 🚂
+
+    🌮 Just a constructor. Nothing much to see here. 🌮
+    🐈🆕 🍼host🔡 🍼port🚂 🍇🍉
+
+    🌮 Send a <SOMETHING> request 🌮
+    🐖💬 type🔡 endpoint🔡 headers🍯🐚🔡 body🍬🔡 ➡ 🔡 🍇
+        🍦 socket 🚇 🔷📞🆕 🔤localhost🔤 4242
+        🍦 request 🔷🍨🐚🔡🐸
+        🐻 request 🍪 type 🔤 🔤 endpoint 🔤 HTTP/1.1🔤 🍪
+        🐻 request 🍪 🔤Host: 🔤 host 🔤:🔤 🔡port 10 🍪
+        🔂 header_key 🍡🐙 headers 🍇
+            🐻 request 🍪 header_key 🔤: 🔤 🍺🐽headers header_key 🍪
+        🍉
+        🍊❎☁body 🍇
+            🐻 request 🍪 🔤Content-Length: 🔤 🔡📐🍺body 10 🍪
+        🍉
+        🍮 output 🔤🔤
+        🔂 line 🍡request 🍇
+            🍮 output 🍪 output line 🔤❌r❌n🔤 🍪
+        🍉
+        🍮 output 🍪 output 🔤❌r❌n🔤 🍪
+        🍊🍦 b body 🍇
+            🍮 output 🍪 output b 🍪
+        🍉
+        💬 socket 📇 output
+
+        🍮 header 🔤🔤
+        🍮 content_body 🔤🔤
+        🍮 finished_header 👎
+        🔁 😛 finished_header 👎 🍇
+            🍊🍦 data 👂 socket 1 🍇
+                🍊🍦 data_str 🔡data 🍇
+                    🍮 header 🍪 header data_str 🍪
+                🍉
+            🍉
+            🍮 finished_header ⛳header 🔤❌r❌n❌r❌n🔤
+        🍉 
+
+        🍮 length 1
+        🍮 content_length 0
+        🍮 found_length 👎
+        🍦 start_position 🍺🔍header 🔤Content-Length: 🔤
+        🔁 😛 found_length 👎 🍇
+        😀 🔡length 10
+            🍊 ⛳🔪header ➕16 start_position length 🔤❌r🔤 🍇
+                🍮 found_length 👍
+                🍮 content_length 🍺🚂 🔪header ➕16 start_position ➖length 1 10
+            🍉🍓🍇
+                🍮 length ➕length 1
+            🍉
+        🍉
+        🍮 content_body 🍺🔡🍺👂 socket content_length
+        🙅 socket
+        🍎 content_body
+    🍉
+
+    🌮 Send a GET request 🌮
+    🐖👉 endpoint🔡 headers🍯🐚🔡 body🍬🔡 ➡ 🔡 🍇
+        🍎💬🐕 🔤GET🔤 endpoint headers body
+    🍉
+
+    🌮 Send a POST request 🌮
+    🐖💦 endpoint🔡 headers🍯🐚🔡 body🍬🔡 ➡ 🔡 🍇
+        🍎💬🐕 🔤POST🔤 endpoint headers body
+    🍉
+
+🍉
