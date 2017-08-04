@@ -44,17 +44,36 @@
         🍮 length 1
         🍮 content_length 0
         🍮 found_length 👎
-        🍦 start_position 🍺🔍header 🔤Content-Length: 🔤
-        🔁 😛 found_length 👎 🍇
-        😀 🔡length 10
-            🍊 ⛳🔪header ➕16 start_position length 🔤❌r🔤 🍇
-                🍮 found_length 👍
-                🍮 content_length 🍺🚂 🔪header ➕16 start_position ➖length 1 10
-            🍉🍓🍇
-                🍮 length ➕length 1
+        🍊❎☁🔍header 🔤Transfer-Encoding: chunked🔤 🍇
+            🍮 done 👎
+            🍮 current 🔤🔤
+            🔁❎done 🍇
+                🍮 current 🍪 current 🍺🔡🍺👂 socket 1 🍪
+                🍊⛳ current 🔤❌r❌n🔤 🍇
+                    🍮 chunk_length 🍺🚂🔪current 0 ➖📐current 2 16
+                    🍊 😛 chunk_length 0 🍇
+                        🍮 done 👍
+                    🍉🍓🍇
+                        🍮 chunk_body 🍺🔡🍺👂 socket chunk_length
+                        🍮 content_body 🍪 content_body chunk_body 🍪
+                        👂 socket 2
+                        🍮 current 🔤🔤
+                    🍉
+                🍉
             🍉
+        🍉🍓🍇
+            🍦 start_position 🍺🔍header 🔤Content-Length: 🔤
+            🔁 😛 found_length 👎 🍇
+            😀 🔡length 10
+                🍊 ⛳🔪header ➕16 start_position length 🔤❌r🔤 🍇
+                    🍮 found_length 👍
+                    🍮 content_length 🍺🚂 🔪header ➕16 start_position ➖length 1 10
+                🍉🍓🍇
+                    🍮 length ➕length 1
+                🍉
+            🍉
+            🍮 content_body 🍺🔡🍺👂 socket content_length
         🍉
-        🍮 content_body 🍺🔡🍺👂 socket content_length
         🙅 socket
         🍎 content_body
     🍉

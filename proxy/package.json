@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "longjohn": "^0.2.12",
     "ws": "^3.1.0"
   }
 }

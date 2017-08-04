@@ -1,6 +1,7 @@
 const WebSocket = require("ws")
 const net = require("net")
 const tls = require("tls")
+require("longjohn")
 
 const WSS_HOST = "127.0.0.1"
 const WSS_PORT = 6969
@@ -24,7 +25,11 @@ http_server.on("connection", (sock) => {
             sock.write(data)
             console.log(data.toString())
         })
+        s.on("error", () => {})
+        sock.on("error", () => {})
     })
+    sock.onclose = sock.onerror = console.log
+    s.onclose = s.onerror = console.log
 })
 
 var wss_server = net.createServer()
