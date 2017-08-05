@@ -61,7 +61,8 @@ wss_server.on("connection", (sock) => {
                 })
                 wss_relay = []
             }
-            //console.log("<< " + JSON.stringify(JSON.parse(data)))
+            console.log(data.toString())
+            console.log("<< " + JSON.stringify(JSON.parse(data)))
             wss.send(JSON.stringify(JSON.parse(data)))
         }
     })
