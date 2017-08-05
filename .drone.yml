@@ -16,8 +16,8 @@ pipeline:
       - cp -r Emojicode-0.5.0-Linux-x86_64/packages/* /usr/local/EmojicodePackages
       - Emojicode-0.5.0-Linux-x86_64/emojicodec src/main.emojic
 
-  #docker:
-  #  image: plugins/docker
-  #  repo: magnificentpako/cancer
-  #  tags: latest
-  #  secrets: [ docker_username, docker_password ]<
+  docker:
+    image: plugins/docker
+    repo: magnificentpako/cancer
+    tags: latest
+    secrets: [ docker_username, docker_password ]
