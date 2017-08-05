@@ -13,12 +13,11 @@ pipeline:
       - apt-get install -y wget
       - wget https://github.com/emojicode/emojicode/releases/download/v0.5/Emojicode-0.5.0-Linux-x86_64.tar.gz
       - tar xf Emojicode-0.5.0-Linux-x86_64.tar.gz
-      - cd Emojicode-0.5.0-Linux-x86_64
-      - cp -r packages/* /usr/local/EmojicodePackages
+      - cp -r Emojicode-0.5.0-Linux-x86_64/packages/* /usr/local/EmojicodePackages
       #- ./install.sh
-      - cd ..
-      
-      - Emojicode-0.5.0-Linux-x86_64/emojicodec ../src/main.emojic
+      - ls
+      - ls src
+      - Emojicode-0.5.0-Linux-x86_64/emojicodec src/main.emojic
 
   #docker:
   #  image: plugins/docker
