@@ -19,7 +19,7 @@ http_server.on("connection", (sock) => {
         sock.on("data", (data) => {
             var d = data.toString()
             s.write(d.replace("Host: localhost:4242", "Host: discordapp.com:443"))
-            console.log(d.replace("Authorization: Bot MzAxNjc5NzI3NTQwNjk5MTM2.DGZsiA.9ZGj7p-FLOm33_PmNQdSQQCxqeo\r\n", ""))
+            console.log(d.replace(/Authorization: Bot .+\r\n/g, ""))
         })
         s.on("data", (data) => {
             sock.write(data)
@@ -43,11 +43,11 @@ wss_server.on("connection", (sock) => {
 
     wss.on("message", (data) => {
         console.log(">> " + data)
+        sock.write(data.toString().length + "\r\n")
         sock.write(data)
-        sock.write(";")
     })
 
-    wss.on("open", () => {console.log("READY"); sock.write("c;")})
+    wss.on("open", () => {console.log("READY");})
 
     sock.on("data", (data) => {
         if(data == ";") return
