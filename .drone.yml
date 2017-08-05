@@ -7,6 +7,7 @@ pipeline:
       #- curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
       #- echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
       #- sudo apt-get update && sudo apt-get install yarn
+      - apt-get install -y wget
       - wget https://github.com/emojicode/emojicode/releases/download/v0.5/Emojicode-0.5.0-Linux-x86_64.tar.gz
       - tar xf Emojicode-0.5.0-Linux-x86_64.tar.gz
       - cd Emojicode-0.5.0-Linux-x86_64
