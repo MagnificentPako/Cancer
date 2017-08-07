@@ -108,14 +108,12 @@
     🐊🚧
 
     🍰 id 🔡
-    👴🍰 bot 👌
     🍰 avatar 🔡
     🍰 username 🔡
     🍰 discriminator 🔡
 
     🐈🆕 raw🍯🐚⚪ 🍇
         🍮 id 🍺🔲🐽 raw 🔤id🔤 🔡
-        🍊👴🍮 bot 🍺🔲🐽 raw 🔤bot🔤 👌
         🍮 avatar 🍺🔲🐽 raw 🔤avatar🔤 🔡
         🍮 username 🍺🔲🐽 raw 🔤username🔤 🔡
         🍮 discriminator 🍺🔲🐽 raw 🔤discriminator🔤 🔡
@@ -127,7 +125,6 @@
     🐖🚧 ➡ 🔡 🍇
         🍦 json 🔷🍯🐚🚧🐸
         🐷 json 🔤id🔤 id
-        👴🐷 json 🔤bot🔤 bot
         🐷 json 🔤avatar🔤 avatar 
         🐷 json 🔤username🔤 username
         🐷 json 🔤discriminator🔤 discriminator
