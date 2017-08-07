@@ -12,6 +12,18 @@ const HTTP_PORT = 4242
 var messages = []
 var socket = null
 
+function byteLength(str) {
+  // returns the byte length of an utf8 string
+  var s = str.length;
+  for (var i=str.length-1; i>=0; i--) {
+    var code = str.charCodeAt(i);
+    if (code > 0x7f && code <= 0x7ff) s++;
+    else if (code > 0x7ff && code <= 0xffff) s+=2;
+    if (code >= 0xDC00 && code <= 0xDFFF) i--; //trail surrogate
+  }
+  return s;
+}
+
 var http_server = net.createServer()
 http_server.listen(HTTP_PORT, HTTP_HOST)
 http_server.on("connection", (sock) => {
@@ -43,7 +55,7 @@ wss_server.on("connection", (sock) => {
 
     wss.on("message", (data) => {
         console.log(">> " + data)
-        sock.write(data.toString().length + "\r\n")
+        sock.write(byteLength(data.toString()) + "\r\n")
         sock.write(data)
     })
 

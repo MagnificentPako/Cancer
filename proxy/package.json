@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "longjohn": "^0.2.12",
+    "node-emoji": "^1.8.1",
     "ws": "^3.1.0"
   }
 }

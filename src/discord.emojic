@@ -4,7 +4,7 @@
 🌮 
     A class which let's you interact with Discord thingies.
 🌮
-🐇 🎅 🍇
+🐇 ♋ 🍇
     🍰 socket 📞
     🍰 token 🔡
     🍰 headers 🍯🐚🔡
@@ -109,21 +109,15 @@
 
     🍰 id 🔡
     👴🍰 bot 👌
-    👴🍰 email 🔡
     🍰 avatar 🔡
     🍰 username 🔡
-    👴🍰 verified 👌
-    👴🍰 mfa_enabled 👌
     🍰 discriminator 🔡
 
     🐈🆕 raw🍯🐚⚪ 🍇
         🍮 id 🍺🔲🐽 raw 🔤id🔤 🔡
-        👴🍮 bot 🍺🔲🐽 raw 🔤bot🔤 👌
-        👴🍮 email 🍺🔲🐽 raw 🔤email🔤 🔡
+        🍊👴🍮 bot 🍺🔲🐽 raw 🔤bot🔤 👌
         🍮 avatar 🍺🔲🐽 raw 🔤avatar🔤 🔡
         🍮 username 🍺🔲🐽 raw 🔤username🔤 🔡
-        👴🍮 verified 🍺🔲🐽 raw 🔤verified🔤 👌
-        👴🍮 mfa_enabled 🍺🔲🐽 raw 🔤mfa_enabled🔤 👌
         🍮 discriminator 🍺🔲🐽 raw 🔤discriminator🔤 🔡
     🍉
 
@@ -134,11 +128,8 @@
         🍦 json 🔷🍯🐚🚧🐸
         🐷 json 🔤id🔤 id
         👴🐷 json 🔤bot🔤 bot
-        👴🐷 json 🔤email🔤 email
         🐷 json 🔤avatar🔤 avatar 
         🐷 json 🔤username🔤 username
-        👴🐷 json 🔤verified🔤 verified
-        👴🐷 json 🔤mfa_enabled🔤 mfa_enabled 
         🐷 json 🔤discriminator🔤 discriminator
         🍎 🚧json
     🍉
@@ -176,3 +167,4 @@
         🍎 🚧json
     🍉
 🍉
+
